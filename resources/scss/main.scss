@@ -1,0 +1,20 @@
+@import 'mixins'; 
+// @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+
+
+
+#delete-cat{
+	@include nice-button;
+}
+
+.register-form input:focus{
+	@include nice_focus;
+}
+
+#search-in-site-2 input:focus{
+	@include nice_focus("#18296e");
+}
+
+
+// 

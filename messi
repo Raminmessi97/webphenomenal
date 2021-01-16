@@ -1,0 +1,11 @@
+<?php
+
+require_once("vendor/autoload.php");
+
+use Cmd\MainFactory;
+
+array_shift($argv);
+
+MainFactory::before_run($argv);
+
+MainFactory::run();
