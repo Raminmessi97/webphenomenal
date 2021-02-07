@@ -70,4 +70,8 @@ class CommentController  {
 	     $new_date = date("d-m-Y", $timestamp);	
 	     return $new_date;
 	}
+
+	public function store_response(Request $request){
+		print_r(NiceOutput::getNiceJson($request));
+	}
 }

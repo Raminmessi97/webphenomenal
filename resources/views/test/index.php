@@ -1,36 +1,26 @@
-<?php require_once("resources/views/layouts/header.php")?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webphenomenal.ru - сайт о backend и frontend разработке</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="<?php echo URL_MAIN; ?>node_modules/font-awesome/css/font-awesome.min.css">
 
-<main class="content">
+     <meta name="csrf_token" content="<?php echo $_SESSION['csrf_token']; ?>">
 
-    <article>
+    <link rel="stylesheet" type="text/css" href="<?php echo URL_MAIN; ?>resources/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
 
-    	<!-- <form action="test/test_xss" method="POST">	
-    		<input type="text" placeholder="Name" name="name">
-    	</form> -->
+</head>
+<body>
 
-    	<!-- <form action="https://phenomenonal.000webhostapp.com/" method="POST">
-    		<input type="text" name="name" placeholder="name"/>
-    		<input type="text" name="surname" placeholder="surname"/>
-    		<input type="submit" value="submit">
-    	</form> -->
-		
-		<a href="https://phenomenonal.000webhostapp.com/">
-			DOMAIN
-		</a>
+	<article>
 
-    </article>
+    <div id="test"></div>
+  </article>
 
+   
+</body>
 
+  <script src="<?php echo URL_MAIN; ?>resources/bundle.js"></script>
 
-
-    
-
-    <?php require_once("resources/views/layouts/aside.php")?>
-
-</main>
-
-<?php require_once("resources/views/layouts/footer.php")?>
-
-
-
-
+</html>

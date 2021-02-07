@@ -3,6 +3,14 @@
 namespace App\Useful_funcs;
 
 class Defeat{
+
+	public static function csrf_defeat_session(){
+		$token  = bin2hex(random_bytes(32));
+		$_SESSION['csrf_token'] = $token;
+		return $token;
+	}
+
+
 	 /**
      * Defeat from csrf attacks
      *

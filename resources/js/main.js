@@ -54,51 +54,14 @@ $(document).on('touchstart',function (e) {
     }
 });
 
-// alert(localStorage.getItem("login"))
- 
-// var ram = 0;
-// localStorage.setItem("login", false);
-// var login_check = (function() {
-//     return function() {
-//     	if(localStorage.getItem("login")=="true"){
-//     		location.reload();
+// function logSubmit(event) {
+//   event.preventDefault();
+//   var token =  $("meta[name='csrf-token']").attr("content");
+//   console.log(token)
+// }
 
-// 			localStorage.setItem("login", false)
-// 		}
-// 	}
-// })();
-
-
-// let loginTime = setInterval(login_check, 1000);
-
-// setTimeout(loginTime, 1);
-
-
-// $('#user-login').on('click',function(e){
-// 	localStorage.setItem("login", true);
-// });
-
-
-// if (window.localStorage){
-//      $('a#user-logout').on('click', function(){
-//         localStorage.setItem("app-logout", 'logout' + Math.random());
-//         return true;
-//      });
-
-//      $('test-localstorage').on('click',function(){
-//      	localStorage.setItem("name", "ramin");
-//      	return true;
-//      })
-//  }
- 
-// window.addEventListener('storage', function(event){
-//   if (event.key == "app-logout") {
-//     window.location = $('a#user-logout').attr('href');
-//   }
-//     if (event.key == "name") {
-//     	console.log('name'+localStorage.getItem("name"));
-//   }
-// }, false);
+// const form = document.getElementById('formsubmit');
+// form.addEventListener('submit', logSubmit);
 
 
 

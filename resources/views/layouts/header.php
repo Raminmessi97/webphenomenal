@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="<?php echo URL_MAIN; ?>node_modules/font-awesome/css/font-awesome.min.css">
 
+
     <link rel="stylesheet" type="text/css" href="<?php echo URL_MAIN; ?>resources/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+    <meta name="csrf_token" content="<?php echo $_SESSION['csrf_token']; ?>">
 
 </head>
 <body>

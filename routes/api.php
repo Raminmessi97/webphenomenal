@@ -15,4 +15,3 @@ Router::get("api/categories","Api\CategoryController@index");
 
 Router::get("api/comments/get/([0-9]+)","Api\CommentController@get");
 Router::post("api/comments/store","Api\CommentController@store");
-
